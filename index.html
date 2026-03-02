@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var lists = document.querySelectorAll(".sortable-list");
+
+      lists.forEach(function (list) {
+        var items = list.getElementsByTagName("li");
+        var itemsArray = Array.from(items);
+
+        itemsArray.sort(function (a, b) {
+          return a.textContent.localeCompare(b.textContent);
+        });
+
+        while (list.firstChild) {
+          list.removeChild(list.firstChild);
+        }
+
+        itemsArray.forEach(function (item) {
+          list.appendChild(item);
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header id="header">
+    <h1>Patryk Kubiak</h1>
+    <hr />
+    Software Architect | Cloud | DevSecOps | AI
+    <hr />
+  </header>
+  <main>
+    <article id="mainLeft" author="kpatryk2">
+      <section>
+        <h2>CONTACT</h2>
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:patryk.kubiak@gmail.com">patryk.kubiak</a>
+        </p>
+        <p>
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <a href="https://github.com/kpatryk">kpatryk</a>
+        </p>
+        <p>
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+          <a href="https://twitter.com/patryk_kubiak">Patryk Kubiak</a>
+        </p>
+        <p>
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+          <a href="https://www.linkedin.com/in/patrykkubiak/">Patryk Kubiak</a>
+        </p>
+      </section>
+      <section>
+        <h2>SKILLS</h2>
+        <p>
+          Software architecture, problem solving, design patterns, continuous refactoring, DevSecOps, CI/CD, cloud
+          architecture,
+          network automation, cloud native apps, cybersecurity, data engineering.
+        </p>
+        </p>
+      </section>
+      <section>
+        <h2>EDUCATION</h2>
+        <h3>Master of Science</h3>
+        <p>University of Adam Mickiewicz in Poznań</p>
+        <p>1998-2003</p>
+      </section>
+      <section>
+        <h2>CERTIFICATES</h2>
+        <h3>Cloud</h3>
+        <ul class="sortable-list">
+          <li>
+            <a href="https://learn.microsoft.com/en-us/users/Patryk/credentials/BA97C5A25EB80DD1">Microsoft | Azure
+              Solutions Architect Expert</a>
+          </li>
+          <li>
+            <a href="https://learn.microsoft.com/en-us/users/patryk/credentials/14568256b44c87a2">Microsoft | Azure
+              Administrator Associate</a>
+          </li>
+          <li>
+            <a href="https://learn.microsoft.com/en-us/users/Patryk/credentials/7B817FF7CA99D58C">Microsoft | Azure
+              Fundamentals</a>
+          </li>
+          <li>
+            <a href="https://learn.microsoft.com/en-us/users/Patryk/credentials/39F1652D68805DF">Microsoft | Azure AI
+              Fundamentals</a>
+          </li>
+        </ul>
+        <h3>Java Developer</h3>
+        <ul>
+          <li><a href="https://drive.google.com/file/d/11uJ7fiPRjxxmmNY9ZQSC3K50WTV9e7r5/">Sun |
+              Certified Java Programmer, 2004</a></li>
+          <li><a href="https://drive.google.com/file/d/1izVaKW_QWJdhuxe63XZ2LOEFQXGa-mZO/">Sun | Certified Java Web
+              Component Developer, 2005</a></li>
+          <li><a href="https://drive.google.com/file/d/1GnL0UFbXd2mevfJoT5RyGYVXlIixgg7O/">Sun | Certified Java
+              Business Component Developer, 2005</a></li>
+        </ul>
+        </ul>
+        <h3>Coursera specializations</h3>
+        <ul>
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EUMKSS59V3W8">InfoSec |
+              OWASP Top 10 (2021), 2023</a>
+          </li>
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/SSE6R6ZJSXW8">Gogole |
+              Google Cybersecurity Professional, 2024</a>
+          </li>
+        </ul>
+        <h2>COURSES</h2>
+        <h3>Cybersecurity & AI</h3>
+        <ul>
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/AK5UFBJABE3B">Google | Foundations of
+              Cybersecurity, 2023</a>
+          </li>
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/D2ADUE9QDP3R">Google | Play it safe,
+              2023</a>
+          </li>
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/KQ6QCFP28FLV">Google | Connect and
+              Protect: Networks and Network Security, 2023</a>
+          </li>
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/2SPXR5PJDJCP">Google | Tools of the
+              Trade: Linux and SQL, 2023</a>
+          </li>
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/66P4SRCYVQBB">Google | Assets,
+              Threats, and Vulnerabilities, 2023</a>
+          </li>
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/QVPGUJN83HE4">Google | Sound the
+              Alarm: Detection and Response, 2024</a>
+          </li>
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/9TUTV9TLWWJ4">Google | Automate
+              Cybersecurity Tasks with Python, 2024</a>
+          </li>
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/PPTFEKKYTUP2">DeepLearning.AI | AI for
+              everyone, 2023</a>
+          </li>
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/verify/G8HD4K75CYW5">DeepLearning.AI | Generative
+              AI for everyone, 2024</a>
+          </li>
+        </ul>
+
+        <h3>Others</h3>
+        <ul>
+          <li>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/QWLXVFJLX8YC">Coursera | Learning How
+              to learn, 2022</a>
+          </li>
+        </ul>
+      </section>
+    </article>
+    <article id="mainRight">
+      <section>
+        <h2>ABOUT</h2>
+        <p>
+            Accomplished engineering leader with a strong track record in designing and delivering secure, scalable, cloud-native solutions. Passionate about cloud architecture, cybersecurity, and automation (AI/DevSecOps). Dedicated to driving innovation, fostering collaboration, and enabling teams to deliver robust, secure solutions that meets business goals.
+        </p>
+      </section>
+      <section>
+        <h2>WORK EXPERIENCE</h2>
+
+        <h3><strong>Application Security, Principal Engineer</strong> Tech Stack: AWS | Azure | Python | Golang | Kubernetes</h3>
+        <p class="company-paragraph"><a href="https://www.jnj.com/">Johnson & Johnson</a> | 08.2024 - current </p>
+        <p>
+            Leading SaaS security program and AI security initiatives within application security team.
+        </p>
+        </p>
+        </p>
+        <ul>
+            <li>
+            Leading the SaaS security program, onboarding platforms including Salesforce, Workday, Okta and others SaaS apps into AppOmni. 
+            Defined and enforced security policies, established automated reporting processes, and proactively partnered with engineering teams to close identified gaps and drive remediation efforts across the enterprise.
+            Developed a custom CLI tool to automate and extend AppOmni capabilities. 
+            </li>
+          <li>
+            Developed custom Python SDKs to securely integrate with corporate IdPs, enabling automated retrieval of sensitive user and group data, perform data cleanup and validations.
+          </li>
+          <li>
+            Leading AI security initiatives within the AppSec space, collaborating with different vendors such as Cranium AI (model scanning, vulnerability assessment), Harmonic Security (prompt injections, protecting from DLP leaks), Cisco AI Defense (to ensure secure integration of AI tools in the enterprise),
+            and Wiz (identify AI assets and tools, assess risks, and drive mitigation strategies with application teams).
+          </li>
+          <li>
+            Built an automation CLI tool (to use with Cranium) to be able create AI BOMs for discovered AI/ML repositories, provision AI system manager cards, automate users provisioning and reporting.
+          </li>
+          <li>
+            Continuously mentored team members, promoting both secure coding and engineering best practices.
+          </li>
+          <li>
+            Help drive the adoption of DevSecOps practices, work with various SCA/SAST/DAST tools (Snyk / Wiz code / JFrog Xray, Veracode, SonarQube).
+          </li>
+        </ul>
+
+        <hr />
+
+        <h3><strong>Senior DevSecOps Engineer</strong> Tech Stack: AWS | Azure | Kubernetes
+          | Helm Charts</h3>
+        <p class="company-paragraph"><a href="https://www.symphonyai.com/">SymphonyAI</a> | 01.2024-10.2024 </p>
+        <p>
+            Led security and automation initiatives, driving the migration from on-premise BigData/AI to a cloud-native Kubernetes platform. Ensured cloud-agnostic deployments with strong security mindset.
+        </p>
+        </p>
+        </p>
+        <ul>
+          <li>
+            Leveraged AI tools (e.g., GitHub Copilot, Claude 3) to boost development efficiency.
+          </li>
+          <li>
+            Built Python tools for automated Docker image sync across AWS ECR, Azure ACR, and Docker Hub. Automate Helm chart updates.
+          </li>
+          <li>
+            Enabled container security scanning in CI/CD with Trivy (SCA) and Amazon Inspector + automated SBOM/BOV reporting.
+          </li>
+          <li>
+            Implement automated end-to-end certificate lifecycle management using cert-manager and Helm, enabling seamless issuance and rotation for critical applications such as Apache Kafka, PostgreSQL, and Opensearch.
+          </li>
+          <li>
+            Secured application traffic with network policies and evaluated service mesh solutions (Istio, Linkerd, Cilium).
+          </li>
+          <li>
+            Designed secure Azure AKS architecture with private endpoints, network policies, and Azure Firewall.
+          </li>
+          <li>
+            Contriuted in automated deployments and integrations using Helm, including Apache Spark and CloudNative Postgres operators.
+          </li>
+        </ul>
+
+        <hr />
+        <h3><strong>Network Automation | Cloud & Security Engineering</strong> Tech Stack: AWS | Azure | Kubernetes | Python | Terraform | Ansible</h3>
+        <p class="company-paragraph"><a href="https://www.pg.com/">Procter & Gamble</a> | 06.2018 - 01.2024</p>
+        <p>
+          Proactive leader who integrated DevSecOps and IaC practices in the Network Automation team. Designed and deployed Azure solutions, contributed to Python development, and drove process improvements with a focus on security, performance, and scalability.
+        </p>
+        <ul>
+          <li>
+            Designed and implemented Azure-based solutions using services like AKS, Azure Functions, App Service, Key Vault, and DevOps. Reduced Azure costs by 50% ($250k/year) via dynamic autoscaling.
+          </li>
+          <li>
+            Developed and deployed a secure DNS Self-Service REST API, migrating from Azure Web App to AKS, reducing DNS-related tickets by 95%.
+          </li>
+          <li>
+            Led IP Reclamation initiative: architected and deployed a microservices solution on AKS to automate IP cleanup across global networks, integrating Python APIs and async device interactions.
+          </li>
+          <li>
+            Integrated Elastic APM for Kubernetes app monitoring. Introduced Ansible, Terraform, Kubernetes, and GitOps with Flux to the team.
+          </li>
+          <li>
+            Automated AKS provisioning with Istio, secured clusters with NSGs, Private Link, and Azure Policy - enabled logging, monitoring, and compliance.
+          </li>
+          <li>
+            Embedded security in SDLC: used GitHub Advanced Security, Snyk, SonarQube, and Dependabot in CI/CD pipelines.
+          </li>
+          <li>
+            Automated patching and updates for Azure/AWS VM. Mentored teams on Kubernetes deployments and troubleshooting.
+          </li>
+          <li>
+            Automated infrastructure with Terraform. Contributed to shared modules and collaborated with cloud teams.
+          </li>
+          <li>
+            Explored new tools and technologies such as KEDA, Snyk (SCA), SonarQube (SAST), Grafana/Prometheus, and conducted regular code reviews.
+          </li>
+          <li>
+            Standardized CI/CD with Azure Pipelines and GitHub Actions templates, implemented unified build processes with Makefiles.
+          </li>
+          <li>
+            Integrated pre-commit hooks for code quality and security across projects.
+          </li>
+          <li>
+            Promoted TDD with pytest and mocks, prioritized refactoring and technical debt reduction.
+          </li>
+          <li>
+            Automated deployment of Broadcom network monitoring tools on AWS EC2, supporting migration to Azure.
+          </li>
+        </ul>
+
+        <hr />
+        <h3><strong>Lead DevOps Engineer</strong> Tech Stack: Java | Python | Jenkins | PowerShell | Ansible</h3>
+        <p class="company-paragraph"><a href="https://www.dsv.com/">DSV</a> | 07.2016 - 05.2018</p>
+        <p>
+            IT professional focused on best practices, standardization, and automation. Led the DevOps team and promoted knowledge sharing and transparency.
+        </p>
+        <ul>
+          <li>Recruited and led a 4+ member DevOps team.</li>
+          <li>Defined DevOps strategy for microservices migration from WebSphere.</li>
+          <li>Improved CI/CD pipelines in Jenkins for modularity and reuse.</li>
+          <li>Introduced various tools i.e Ansible, Vault or Molecule for automation and streamlined installations.</li>
+          <li>Created custom PowerShell modules and automated dual-boot workstation provisioning with Hyper-V and WSL.</li>
+          <li>Standardized Git branching and release management for Java projects.</li>
+          <li>Developed Ansible roles for automating installations (WebSphere, DB2, Atlassian stack).</li>
+          <li>Automated tasks using Python, shell scripting, and Groovy.</li>
+          <li>Built Packer templates for custom OS images (CentOS, SLES).</li>
+          <li>Integrated JFrog Artifactory for artifact management (Docker, Vagrant, Maven, Python, PowerShell).</li>
+          <li>Developed Nagios XI health checks and performance monitoring.</li>
+          <li>Evaluated DAST security scanning tools (Acunetix, Veracode).</li>
+          <li>Automated IBM SDS/LDAP deployment and provisioning with Ansible.</li>
+        </ul>
+
+        <hr />
+        <h3><strong>Senior DevOps Engineer</strong> Tech stack: AWS | Kubernetes | Chef (Ruby) | Java | MongoDB</h3>
+        <p class="company-paragraph">
+          Inetum, IoT platform for customer <a href="https://www.cumulocity.com/">Cumulocity</a> | 09.2015-05.2016
+        </p>
+        <p>
+          Major achievements: The successful provisioning of the Kubernetes QA and production clusters in the AWS.
+          The migration from Hudson to Jenkins with all CI/CD pipelines. The database migration to the MongoDB from
+          BigCouch in the production on the AWS.
+          </ul>
+        </p>
+        <ul>
+          <li>Rolled out QA and production Kubernetes clusters on AWS for Cumulocity IoT Java stack.</li>
+          <li>Implemented scalable architecture with Nginx, HAProxy, Karaf, MongoDB, and PostgreSQL across 3 AWS regions.</li>
+          <li>Led BigCouch to MongoDB migration and optimized NoSQL DB size, platform ran on OpenShift.</li>
+          <li>Built Kubernetes/OpenShift templates for Deutsche Telekom migration.</li>
+          <li>Automated configuration with Chef and Jenkins, migrated Hudson to Dockerized Jenkins CI.</li>
+          <li>Developed BDD cucumber tests in Ruby, managed DNS (DynDNS) and Nexus repo migrations.</li>
+        </ul>
+
+        <hr />
+        <h3><strong>Senior DevOps Engineer</strong> Tech stack: Ansible | Docker | JBoss | Jenkins | NodeJS</h3>
+        <p class="company-paragraph"><a href="https://inetum.pl/">Inetum</a>, Credit Fraud Detection, banking sector |
+          02.2015-08.2015</p>
+        <p>Migrated from VM-based deployments to Docker, reducing build and deployment time by over 90% for Java and NodeJS apps.</p>
+        <ul>
+          <li>Hardened web apps: enforced HTTPS, set security headers, and disabled weak SSL/TLS protocols.</li>
+          <li>Automated CI/CD with Ansible, Docker, and Spring Boot, migrated all apps to Docker images.</li>
+          <li>Built environments using Vagrant, Packer, and Docker - integrated with GitLab and Artifactory.</li>
+          <li>Implemented monitoring (Zabbix) and gained experience with NodeJS, Gradle, and Groovy.</li>
+        </ul>
+
+        <hr />
+        <h3><strong>DevOps Engineer</strong> Tech stack: Ansible | Docker | Java | Jenkins | Postgres</h3>
+        <p class="company-paragraph">Inetum, customer <a href="https://ikea.com">IKEA</a> | 06.2014-02.2015</p>
+        <p>
+          Automated CI/CD deployment using custom in-house developed Ansible roles. Conducted database performance
+          tuning in the production.
+        </p>
+        <ul>
+          <li>Automated software delivery and deployments using Ansible and Docker.</li>
+          <li>Streamlined CI/CD by using pre-built artifacts from Artifactory/Maven Cache.</li>
+          <li>Enabled local and test environment builds with Docker.</li>
+          <li>Integrated Flyway migrations into Ansible-based deployments.</li>
+          <li>Optimized PostgreSQL performance, automated ETL and deployment tasks.</li>
+          <li>Standardized builds with Maven 3.</li>
+        </ul>
+
+        <hr />
+        <h3><strong>Technical | Solutions Architect</strong> Tech stack: Java | Tomcat | JBoss | Perl | MySQL</h3>
+        <p class="company-paragraph"><a href="https://www.nokia.com/">Nokia Networks</a> | 06.2008-01.2014</p>
+        <p>
+            External consultant for NSN in Kuwait, supporting Nokia Connect eRefill integration and rollout for MEA customers. Contributed to additional software projects.
+        </p>
+        <ul>
+          <li>Designed and refined technical solutions for Java projects (SMS Activation, DMA) and Nokia Connect eRefill, acting as a solution architect for complex customizations and integrations.</li>
+          <li>Led solution architecture for Java-based platforms, ensuring scalable, maintainable, and secure designs tailored to customer requirements.</li>
+          <li>Mentored VAS team, resolved technical issues, and supported platforms (Charge@Once, SMSC, USSD, NetACT).</li>
+          <li>Developed HA Perl scripts, provisioning tools, and reporting web apps - automated data processing and reconciliation.</li>
+          <li>Integrated VAS Bundle with JBoss/Oracle RAC, upgraded eRefill 4.0 with MySQL migration and HA clustering.</li>
+          <li>Optimized SQL queries, improved network routing, and managed Linux clusters for HA/LB.</li>
+          <li>Provided training for NSN & Zain engineers in multiple countries.</li>
+        </ul>
+
+        <hr />
+        <h3><strong>Java Programmer, Infrastructure Engineer</strong> Tech stack: Linux | Java | Tomcat | JBoss | MySQL
+        </h3>
+        <p class="company-paragraph">
+          IMPAQ Warsaw, customer <a href="https://www.nokia.com/">Nokia Networks</a> | 05.2004-06.2008
+        </p>
+        <p>
+            Subcontracted at Nokia R&D, Warsaw, as a core Java developer for Nokia Connect eRefill. Handled development, load testing, deployment, troubleshooting, and on-site support for global customers.
+        </p>
+        <ul>
+            <li>
+            Led integration and delivery of Nokia eRefill platforms for global telecom clients (Zain Saudi, JXMCC China, ETC Ethiopia, DTAC Thailand).
+            </li>
+            <li>
+            Worked as Integration Engineer, Java Developer, and System Engineer in Nokia R&D, contributing to backend Java development, configuration management, and requirements analysis.
+            </li>
+            <li>
+            Automated testing, performed performance tuning (SQL, JVM, Linux), and managed disaster recovery planning.
+            </li>
+            <li>
+            Led support teams, managed customer acceptance, and resolved integration and performance issues across multiple deployments.
+            </li>
+        </ul>
+        <hr />
+        <h3><strong>.NET Programmer</strong></h3>
+        <p class="company-paragraph">Inetum, customer <a href="https://www.ncr.com/">NCR</a> | 02.2004-05.2004</p>
+        <p>Developed custom components for the NCR system.</p>
+        <ul>
+          <li>Developed custom .NET components for Advanced Checkout Solution for NCR, USA</li>
+        </ul>
+
+        <hr />
+        <h3><strong>Linux administrator</strong></h3>
+        <p class="company-paragraph">
+          <a href="https://amu.edu.pl/en">University of Adam Mickiewicz, Poznań</a> | 06.2000-06.2002
+        </p>
+        <p>
+          A part-time job on the university campus during their 3rd year of study. Main focus was on managing Linux
+          servers and workstations, specializing in security and network administration.
+        </p>
+        </p>
+        <ul>
+          <li>
+            Unix/Linux system administration and configuration (Postfix, Apache/Tomcat, Bind, DHCP, NIS/NFS, Samba)
+          </li>
+          <li>Network management, CISCO Catalyst switches</li>
+          <li>Network security, firewall ACL configuration (ipchains and iptables)</li>
+          <li>SQL Server 2000 administration</li>
+          <li>
+            Refinements of the University web portal and implementation of business logic changes (CGI) for course
+            selection based on ranking lists.
+          </li>
+          <li>Became a team leader of Unix/Linux administrators at the last year.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  </script>
+</body>
+
+</html>
